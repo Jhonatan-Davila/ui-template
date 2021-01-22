@@ -1,0 +1,100 @@
+{
+  "name": "app-ui-template",
+  "version": "1.0.0",
+  "description": "application user interface template",
+  "scripts": {
+    "build": "npm run lint && npm run build-webpack",
+    "build-start": "npm run build && npm run start",
+    "build-webpack": "webpack --config ./webpack --env production",
+    "clean": "rimraf build",
+    "dev": "webpack-dev-server --config ./webpack --env development",
+    "lint": "eslint --fix src/**/*.jsx",
+    "start": "npm run build && node build/server.js",
+    "test": "jest",
+    "test-update": "jest --updateSnapshot",
+    "test-watch": "jest --watch"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix --ext .js,.jsx",
+      "git add"
+    ]
+  },
+  "jest": {
+    "testRegex": "(/test/.*\\.(?:spec|test)\\.jsx?)$",
+    "setupFilesAfterEnv": [
+      "jest-enzyme"
+    ],
+    "testEnvironment": "enzyme",
+    "testEnvironmentOptions": {
+      "enzymeAdapter": "react16"
+    }
+  },
+  "dependencies": {
+    "@material-ui/core": "4.9.2",
+    "@material-ui/icons": "4.9.1",
+    "@material-ui/styles": "4.9.0",
+    "classnames": "2.2.6",
+    "core-js": "3.6.4",
+    "hookrouter": "1.2.3",
+    "koa": "2.11.0",
+    "koa-logger": "3.2.1",
+    "koa-send": "5.0.0",
+    "lodash": "4.17.19",
+    "moment": "2.24.0",
+    "prop-types": "15.7.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-jss": "10.0.4",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "5.1.2",
+    "redux": "4.0.5",
+    "reselect": "4.0.0",
+    "whatwg-fetch": "3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.10.2",
+    "@babel/preset-env": "7.8.7",
+    "@babel/preset-react": "7.8.3",
+    "babel-eslint": "10.0.3",
+    "babel-loader": "8.0.6",
+    "clean-webpack-plugin": "3.0.0",
+    "compression-webpack-plugin": "3.1.0",
+    "copy-webpack-plugin": "5.1.1",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "eslint": "6.8.0",
+    "eslint-config-react-app": "5.2.0",
+    "eslint-loader": "3.0.3",
+    "eslint-plugin-flowtype": "4.6.0",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.18.3",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "husky": "4.2.3",
+    "jest": "25.1.0",
+    "jest-environment-enzyme": "7.1.2",
+    "jest-enzyme": "7.1.2",
+    "lint-staged": "10.0.7",
+    "prettier": "1.19.1",
+    "rimraf": "3.0.2",
+    "webpack": "4.41.6",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.10.3",
+    "webpack-merge": "4.2.2"
+  },
+  "repository": {
+    "url": "git@github.com/dcarrsf/app-ui-template.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/dcarrsf/app-ui-template",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

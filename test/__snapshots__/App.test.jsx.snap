@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches its snapshot 1`] = `
+<main
+  className="makeStyles-root-1"
+>
+  <header
+    className="makeStyles-root-2"
+  >
+    <div
+      className="makeStyles-root-3"
+    >
+      <a
+        className="makeStyles-link-7"
+        href="/"
+        onClick={[Function]}
+      >
+        <h6
+          className="MuiTypography-root makeStyles-name-8 makeStyles-selected-9 MuiTypography-h6"
+        >
+          HEADER
+        </h6>
+      </a>
+      <div>
+        <a
+          className="makeStyles-link-4"
+          href="/explore"
+          onClick={[Function]}
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-button-5"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Explore
+            </span>
+          </button>
+        </a>
+        <a
+          className="makeStyles-link-4"
+          href="/preview"
+          onClick={[Function]}
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-button-5"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Preview
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div
+    className="makeStyles-root-10"
+  >
+    <div
+      className="makeStyles-root-12"
+    >
+      <div
+        className="makeStyles-content-13"
+      >
+        <div
+          className="makeStyles-centerAlign-11"
+        >
+          <div>
+            <h1
+              className="MuiTypography-root MuiTypography-h1"
+            >
+              TEMPLATE
+            </h1>
+          </div>
+        </div>
+      </div>
+      <footer
+        className="makeStyles-root-14"
+      >
+        <span
+          className="MuiTypography-root makeStyles-copyright-15 MuiTypography-caption"
+        >
+          Copyright © 2020 [template]. All rights reserved.
+        </span>
+      </footer>
+    </div>
+  </div>
+</main>
+`;

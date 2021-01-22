@@ -1,0 +1,22 @@
+extends: react-app
+settings:
+  react:
+    version: 16.12.0
+plugins:
+    - prettier
+    - jsx-a11y
+    - react
+    - import
+rules:
+  react-hooks/rules-of-hooks: error
+  react-hooks/exhaustive-deps: warn
+  react/prop-types: error
+  no-unused-vars: error
+  no-duplicate-imports: error
+  no-redeclare: error
+  no-unused-expressions: error
+  prettier/prettier:
+    - error
+    - printWidth: 120
+      singleQuote: true
+      tabWidth: 4
